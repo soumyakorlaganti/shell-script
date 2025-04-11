@@ -8,7 +8,7 @@ failure(){
 
 trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
-USERID=$(id -u)
+USERID=$(id -u) #ERR
 
 if [ $USERID -ne 0 ]
 then
